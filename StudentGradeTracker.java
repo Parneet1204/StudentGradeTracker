@@ -1,19 +1,19 @@
 import java.io.*;
 import java.util.*;
 
-public class EnhancedGradeTracker{
+public class StudentGradeTracker{
     private ArrayList<Student> students;
     private Scanner scanner;
     private static final String DATA_FILE = "student_data_cli.ser";
 
-    public EnhancedGradeTracker() {
+    public StudentGradeTracker() {
         students = new ArrayList<>();
         scanner = new Scanner(System.in);
         loadData();
     }
 
     public static void main(String[] args) {
-        EnhancedGradeTracker tracker = new EnhancedGradeTracker();
+        StudentGradeTracker tracker = new StudentGradeTracker();
         tracker.run();
     }
 
